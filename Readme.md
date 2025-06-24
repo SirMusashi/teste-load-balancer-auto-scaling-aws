@@ -4,6 +4,11 @@
 ![EC2](https://img.shields.io/badge/EC2-orange?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
+## Feito por:
+### * Bruno Duarte
+### * Thamires Branquini
+
+## Sobre :
 Este projeto demonstra a criação de uma infraestrutura web resiliente e escalável na AWS. Utilizando um Classic Load Balancer para distribuir tráfego e um Auto Scaling Group para gerenciar instâncias EC2, a arquitetura se adapta automaticamente à demanda, garantindo alta disponibilidade e otimização de custos.
 
 ## Arquitetura Final
@@ -28,17 +33,15 @@ A arquitetura implementada direciona o tráfego do usuário através de um Load 
 ### 1. Criando a VPC
 **Caminho** : ``VPC`` > ``Suas VPCs `` > ``Criar VPC ``
 
-**Nome** : projeto-autoscaling
-
 **Configuração** :
 
-    * Criada com 2 Zonas de Disponibilidade (Availability Zones) para alta disponibilidade.
+ * Criada com 2 Zonas de Disponibilidade (``Availability Zones``) para alta disponibilidade.
 
-    * 2 Sub-redes Públicas, uma em cada Zona de Disponibilidade.
+ * **2 Sub-redes Públicas** , uma em cada Zona de Disponibilidade.
 
-    * Um Internet Gateway anexado à VPC para permitir comunicação com a internet.
+* **Um Internet Gateway** anexado à **VPC** para permitir comunicação com a internet.
 
-    * Tabela de Rotas configurada para direcionar o tráfego das sub-redes para o Internet Gateway.
+* Tabela de Rotas configurada para direcionar o tráfego das **sub-redes** para o **Internet Gateway** .
 
 
 
